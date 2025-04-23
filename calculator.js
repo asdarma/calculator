@@ -18,15 +18,27 @@ const button = document.querySelectorAll('button');
         }
     })
 
-function setOperation() {
-
+// Handle operation
+function setOperation(value) {
+    if (operation !== null) calculate();
+    previousDisplay = currentDisplay;
+    operation = value;
+    resetDisplay = true;
 }
 
 function updateDisplay() {
-    display.textContent = 'hi';
+    display.textContent = currentDisplay;
 }
 
 function appendDisplay() {
-    console.log('button');
+    console.log('number');
     
+}
+
+function calculate() {
+    console.log('calc')
+}
+
+function clearDisplay() {
+    console.log('clear')
 }
