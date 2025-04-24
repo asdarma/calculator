@@ -40,5 +40,8 @@ function calculate() {
 }
 
 function clearDisplay() {
-    console.log('clear')
+    currentDisplay = '0';
+    previousDisplay = '';
+    resetDisplay = false;
+    operation = null;
 }
