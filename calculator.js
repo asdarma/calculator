@@ -55,7 +55,7 @@ function calculate() {
     default: return;
     }
 
-    currentInput = result
+    currentInput = result.toFixed(7);
     operator = null;
     updateDisplay();
 }
@@ -64,6 +64,5 @@ function clearDisplay() {
     currentInput = '0';
     nextInput = '';
     operator = null;
-    resetFlag = false;
     updateDisplay();
 }
